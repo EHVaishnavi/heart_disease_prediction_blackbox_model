@@ -6,8 +6,8 @@ import os
 
 # Load model
 #model = joblib.load('C:/Users/VAISHNAVINA/Desktop/XGBOOST/heart_disease_model.pkl')
-model = joblib.load(os.path.join(os.path.dirname(__file__), 'C:/Users/VAISHNAVINA/Desktop/XGBOOST/heart_disease_model.pkl'))
-
+model_path = os.path.join(os.path.dirname(__file__), 'heart_disease_model.pkl')
+model = joblib.load(model_path)
 st.title("❤️ Heart Disease Prediction App")
 st.write("Answer the questions below to estimate your risk of heart disease.")
 
